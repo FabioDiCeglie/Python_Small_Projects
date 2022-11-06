@@ -33,7 +33,21 @@ cursor = connection.cursor()
 
 # cursor.execute("update mystaff.employees set department = 'Logistics' where last_name = 'Doe';")
 
-cursor.execute("delete from mystaff.employees where salary > 50000;")
+# cursor.execute("delete from mystaff.employees where salary > 50000;")
+
+cursor.execute("select * from mystaff.employees where salary > 5000")
+
+records = cursor.fetchall()
+
+for record in records:
+    print(record)
+
+cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
+
+records = cursor.fetchall()
+
+for record in records:
+    print(record)
 
 connection.commit()
 
