@@ -8,3 +8,22 @@ except psycopg2.Error as err:
 
 else:
     print("Connection to database was successful!")
+
+# Creating databases tables with Python
+
+# Cursor is a dedicated structure that allow us to traverse the records of a database
+cursor = connection.cursor()
+
+cursor.execute('''create table mystaff.employees
+      (id int primary key not null,
+       first_name varchar(25) not null,
+       last_name varchar(25) not null,
+       department varchar(25) not null,
+       phone varchar(25),
+       address varchar(50),
+       salary int);''')
+
+
+connection.commit()
+
+connection.close()

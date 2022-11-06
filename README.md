@@ -1,4 +1,4 @@
-## First small projects in Python
+First small projects in Python
 
 ## Scientific Calculator
 
