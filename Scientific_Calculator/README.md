@@ -1,5 +1,3 @@
-## First project in Python
-
 ## Scientific Calculator
 
 I create a scientific calculator in Python.
