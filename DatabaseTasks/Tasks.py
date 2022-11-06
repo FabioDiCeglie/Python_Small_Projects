@@ -31,7 +31,9 @@ cursor = connection.cursor()
 #         (5, 'Emma', 'Richard', 'Marketing', '0423453580', '5th Street, Denver', 40000);")
 
 
-cursor.execute("update mystaff.employees set department = 'Logistics' where last_name = 'Doe';")
+# cursor.execute("update mystaff.employees set department = 'Logistics' where last_name = 'Doe';")
+
+cursor.execute("delete from mystaff.employees where salary > 50000;")
 
 connection.commit()
 
