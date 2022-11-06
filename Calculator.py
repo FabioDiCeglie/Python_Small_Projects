@@ -98,3 +98,51 @@ while True:
             continue
         else:
             break
+
+    #Logarithm
+    elif oper == "7":
+        val1 = float(input("\nEnter the value for calculation the logarithm to base two: "))
+
+        print("\nThe result is: " + str(math.log(val1, 2)) + "\n")
+        back = input("\nGo back to the main menu? (y/n)")
+
+        if back == 'y':
+            continue
+        else:
+            break
+
+    #Sine
+    elif oper == "8":
+        val1 = float(input("\nEnter the value (in degrees) for calculating the sine: "))
+
+        print("\nThe result is: " + str(math.sin(math.radians(val1))) + "\n")
+        back = input("\nGo back to the main menu? (y/n)")
+
+        if back == 'y':
+            continue
+        else:
+            break
+
+    #Cosine
+    elif oper == "9":
+        val1 = float(input("\nEnter the value (in degrees) for calculating the sine: "))
+
+        print("\nThe result is: " + str(math.cos(math.radians(val1))) + "\n")
+        back = input("\nGo back to the main menu? (y/n)")
+
+        if back == 'y':
+            continue
+        else:
+            break
+
+    #Tangent
+    elif oper == "10":
+        val1 = float(input("\nEnter the value (in degrees) for calculating the sine: "))
+
+        print("\nThe result is: " + str(math.cos(math.radians(val1))) + "\n")
+        back = input("\nGo back to the main menu? (y/n)")
+
+        if back == 'y':
+            continue
+        else:
+            break
