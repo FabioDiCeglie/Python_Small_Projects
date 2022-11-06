@@ -139,7 +139,7 @@ while True:
     elif oper == "10":
         val1 = float(input("\nEnter the value (in degrees) for calculating the sine: "))
 
-        print("\nThe result is: " + str(math.cos(math.radians(val1))) + "\n")
+        print("\nThe result is: " + str(math.tan(math.radians(val1))) + "\n")
         back = input("\nGo back to the main menu? (y/n)")
 
         if back == 'y':
