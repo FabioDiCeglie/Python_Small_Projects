@@ -35,16 +35,30 @@ cursor = connection.cursor()
 
 # cursor.execute("delete from mystaff.employees where salary > 50000;")
 
-cursor.execute("select * from mystaff.employees where salary > 5000")
+# cursor.execute("select * from mystaff.employees where salary > 5000")
 
-records = cursor.fetchall()
+# records = cursor.fetchall()
+
+# for record in records:
+#     print(record)
+
+# cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
+
+# records = cursor.fetchall()
+
+# for record in records:
+#     print(record)
+
+cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
+
+records = cursor.fetchone()
 
 for record in records:
     print(record)
 
 cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
 
-records = cursor.fetchall()
+records = cursor.fetchmany(size=2)
 
 for record in records:
     print(record)
