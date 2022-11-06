@@ -49,20 +49,25 @@ cursor = connection.cursor()
 # for record in records:
 #     print(record)
 
-cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
+# cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
 
-records = cursor.fetchone()
+# records = cursor.fetchone()
 
-for record in records:
-    print(record)
+# for record in records:
+#     print(record)
 
-cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
+# cursor.execute("select * from mystaff.employees where salary between 40000 and 45000")
 
-records = cursor.fetchmany(size=2)
+# records = cursor.fetchmany(size=2)
 
-for record in records:
-    print(record)
+# for record in records:
+#     print(record)
+
+cursor.execute("insert into mystaff.employees (id,first_name,last_name,department,phone,address,salary) \
+ values (8, 'Emma', 'Richard', 'Marketing', '0423453580', '5th Street, Denver', 40000);")
 
 connection.commit()
+
+connection.rollback()
 
 connection.close()
