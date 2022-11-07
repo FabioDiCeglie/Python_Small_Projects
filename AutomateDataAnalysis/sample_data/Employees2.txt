@@ -1,0 +1,11 @@
+ID|FirstName|LastName|Department|Phone|Address|Salary|Skills
+1|Luke|Phillip|Sales|1234567890|"1st Address, Miami"|52000|Online Sales
+2|Jack|Darren|IT|1234567891|"2nd Address, Miami"|52200|Networking
+3|Ken|Wood|IT|1234567892|"3rd Address, Miami"|58000|"Python, Java"
+4|John|Wilson|Marketing|1234567893|"4th Address, Miami"|58700|Facebook Ads
+5|Emily|Larson|Marketing|1234567894|"5th Address, Miami"|60000|Instagram Ads
+6|Anna|Sullivan|Sales|1234567895|"6th Address, Miami"|54000|In-Person Sales
+7|Richard|Smith|Logistics|1234567896|"7th Address, Miami"|56000|Warehouse Mgmt.
+8|Ronnie|Moore|Sales|1234567897|"8th Address, Miami"|49000|Online Sales
+9|Test|Drake|IT|1234567898|"9th Address, Miami"|53000|Linux Servers
+10|Wayne|Barker|Logistics|1234567899|"10th Address, Miami"|59500|Product Loading

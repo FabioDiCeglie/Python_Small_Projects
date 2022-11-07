@@ -1,0 +1,102 @@
+[
+  {
+    "ID": 1,
+    "FirstName": "Luke",
+    "LastName": "Phillip",
+    "Department": "Sales",
+    "Phone": 1234567890,
+    "Address": "1st Address, Miami",
+    "Salary": 52000,
+    "Skills": "Online Sales"
+  },
+  {
+    "ID": 2,
+    "FirstName": "Jack",
+    "LastName": "Darren",
+    "Department": "IT",
+    "Phone": 1234567891,
+    "Address": "2nd Address, Miami",
+    "Salary": 52200,
+    "Skills": "Networking"
+  },
+  {
+    "ID": 3,
+    "FirstName": "Ken",
+    "LastName": "Wood",
+    "Department": "IT",
+    "Phone": 1234567892,
+    "Address": "3rd Address, Miami",
+    "Salary": 58000,
+    "Skills": "Python, Java"
+  },
+  {
+    "ID": 4,
+    "FirstName": "John",
+    "LastName": "Wilson",
+    "Department": "Marketing",
+    "Phone": 1234567893,
+    "Address": "4th Address, Miami",
+    "Salary": 58700,
+    "Skills": "Facebook Ads"
+  },
+  {
+    "ID": 5,
+    "FirstName": "Emily",
+    "LastName": "Larson",
+    "Department": "Marketing",
+    "Phone": 1234567894,
+    "Address": "5th Address, Miami",
+    "Salary": 60000,
+    "Skills": "Instagram Ads"
+  },
+  {
+    "ID": 6,
+    "FirstName": "Anna",
+    "LastName": "Sullivan",
+    "Department": "Sales",
+    "Phone": 1234567895,
+    "Address": "6th Address, Miami",
+    "Salary": 54000,
+    "Skills": "In-Person Sales"
+  },
+  {
+    "ID": 7,
+    "FirstName": "Richard",
+    "LastName": "Smith",
+    "Department": "Logistics",
+    "Phone": 1234567896,
+    "Address": "7th Address, Miami",
+    "Salary": 56000,
+    "Skills": "Warehouse Mgmt."
+  },
+  {
+    "ID": 8,
+    "FirstName": "Ronnie",
+    "LastName": "Moore",
+    "Department": "Sales",
+    "Phone": 1234567897,
+    "Address": "8th Address, Miami",
+    "Salary": 49000,
+    "Skills": "Online Sales"
+  },
+  {
+    "ID": 9,
+    "FirstName": "Ron",
+    "LastName": "Drake",
+    "Department": "IT",
+    "Phone": 1234567898,
+    "Address": "9th Address, Miami",
+    "Salary": 53000,
+    "Skills": "Linux Servers"
+  },
+  {
+    "ID": 10,
+    "FirstName": "Wayne",
+    "LastName": "Barker",
+    "Department": "Logistics",
+    "Phone": 1234567899,
+    "Address": "10th Address, Miami",
+    "Salary": 59500,
+    "Skills": "Product Loading"
+  }
+]
