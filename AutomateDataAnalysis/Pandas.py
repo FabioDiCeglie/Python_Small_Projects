@@ -21,11 +21,33 @@ dtxt = pandas.read_csv("./sample_data/Employees.txt")
 dtxt2 = pandas.read_csv("./sample_data/Employees2.txt", delimiter= '|')
 # print(dtxt2)
 
-dcsv = pandas.read_csv("./sample_data/Employees.csv")
+
+# dcsv = pandas.read_csv("./sample_data/Employees.csv")
 # print(dcsv)
 
 # dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None)
 # print(dcsv)
 
-dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None, names = ["A", "B", "C", "D", "E", "F", "G", "H"])
+# dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None, names = ["A", "B", "C", "D", "E", "F", "G", "H"])
+# print(dcsv)
+
+# dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None, prefix = "COL")
+# print(dcsv)
+
+dcsv = pandas.read_csv("./sample_data/Employees.csv")
+
+# dcsv.set_index("ID", inplace = True)
+# print(dcsv)
+
+# dcsv.set_index("Address", inplace = True)
+# print(dcsv)
+
+
+# print(dcsv.shape)
+
+# dcsv = pandas.read_csv("./sample_data/Employees.csv", skiprows=  4)
+# print(dcsv)
+
+#FIRST FIVE ROWS
+dcsv = pandas.read_csv("./sample_data/Employees.csv", nrows=  5)
 print(dcsv)
