@@ -14,5 +14,9 @@ import pandas
 # print(d.Name)
 # print(d.Age.min())
 
-dtxt = pandas.read_csv("Employees.txt")
+# Read two different files
+dtxt = pandas.read_csv("./sample_data/Employees.txt")
 print(dtxt)
+
+dtxt2 = pandas.read_csv("./sample_data/Employees2.txt", delimiter= '|')
+print(dtxt2)
