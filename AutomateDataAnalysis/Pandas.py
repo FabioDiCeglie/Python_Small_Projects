@@ -50,4 +50,14 @@ dcsv = pandas.read_csv("./sample_data/Employees.csv")
 
 #FIRST FIVE ROWS
 dcsv = pandas.read_csv("./sample_data/Employees.csv", nrows=  5)
-print(dcsv)
+# print(dcsv)
+
+
+#Loading a JSON file from the current directory
+djson = pandas.read_json("./sample_data/Employees.json")
+# print(djson)
+
+
+#Loading an Excel file from the current directory
+dxlsx = pandas.read_excel("./sample_data/Employees.xlsx", sheet_name = 0)
+print(dxlsx)
