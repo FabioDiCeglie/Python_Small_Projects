@@ -16,7 +16,16 @@ import pandas
 
 # Read two different files
 dtxt = pandas.read_csv("./sample_data/Employees.txt")
-print(dtxt)
+# print(dtxt)
 
 dtxt2 = pandas.read_csv("./sample_data/Employees2.txt", delimiter= '|')
-print(dtxt2)
+# print(dtxt2)
+
+dcsv = pandas.read_csv("./sample_data/Employees.csv")
+# print(dcsv)
+
+# dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None)
+# print(dcsv)
+
+dcsv = pandas.read_csv("./sample_data/Employees.csv", header = None, names = ["A", "B", "C", "D", "E", "F", "G", "H"])
+print(dcsv)
