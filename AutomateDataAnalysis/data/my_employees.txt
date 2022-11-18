@@ -1,0 +1,4 @@
+ID,FirstName,LastName,Department,Phone,Address,Salary
+7,Luke,Phillip,Sales,1234567890,"1st Address, Miami",52000
+8,Jack,Darren,IT,1234567891,"2nd Address, Miami",52200
+9,Ken,Wood,IT,1234567892,"3rd Address, Miami",58000

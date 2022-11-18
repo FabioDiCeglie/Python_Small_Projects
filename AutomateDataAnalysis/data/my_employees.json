@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 12,
+    "FirstName": "Anna",
+    "LastName": "Sullivan",
+    "Department": "Sales",
+    "Phone": 1234567895,
+    "Address": "6th Address, Miami",
+    "Salary": 54000
+  },
+  {
+    "ID": 13,
+    "FirstName": "Richard",
+    "LastName": "Smith",
+    "Department": "Logistics",
+    "Phone": 1234567896,
+    "Address": "7th Address, Miami",
+    "Salary": 56000
+  }
+]
