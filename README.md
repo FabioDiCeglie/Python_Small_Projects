@@ -5,3 +5,7 @@ First small projects in Python
 ## DatabaseTasks
 
 ## Automate Data Analysis
+
+## Data Visualization
+
+## PyTest
