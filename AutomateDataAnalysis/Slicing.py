@@ -79,32 +79,32 @@ djson = pandas.read_json("./sample_data/Employees.json")
 # print(djson)
 
 # djson = djson.append([{"Address": "11th Address, Miami",
-                    "Department": "IT",
-                    "FirstName": "John",
-                    "ID": 11,
-                    "LastName": "Doe",
-                    "Phone": "09090977",
-                    "Salary": "60000",
-                    "Skills": "Java",
-                    "Badge ID": "0020"},
-                    {"Address": "12th Address, Miami",
-                    "Department": "IT",
-                    "FirstName": "Jake",
-                    "ID": 12,
-                    "LastName": "Winston",
-                    "Phone": "09090988",
-                    "Salary": "59000",
-                    "Skills": "Python",
-                    "Badge ID": "0021"},
-                    {"Address": "13th Address, Miami",
-                    "Department": "IT",
-                    "FirstName": "Jacob",
-                    "ID": 13,
-                    "LastName": "Mueller",
-                    "Phone": "09090999",
-                    "Salary": "59600",
-                    "Skills": "Routing",
-                    "Badge ID": "0022"}], ignore_index = True)
+                    # "Department": "IT",
+                    # "FirstName": "John",
+                    # "ID": 11,
+                    # "LastName": "Doe",
+                    # "Phone": "09090977",
+                    # "Salary": "60000",
+                    # "Skills": "Java",
+                    # "Badge ID": "0020"},
+                    # {"Address": "12th Address, Miami",
+                    # "Department": "IT",
+                    # "FirstName": "Jake",
+                    # "ID": 12,
+                    # "LastName": "Winston",
+                    # "Phone": "09090988",
+                    # "Salary": "59000",
+                    # "Skills": "Python",
+                    # "Badge ID": "0021"},
+                    # {"Address": "13th Address, Miami",
+                    # "Department": "IT",
+                    # "FirstName": "Jacob",
+                    # "ID": 13,
+                    # "LastName": "Mueller",
+                    # "Phone": "09090999",
+                    # "Salary": "59600",
+                    # "Skills": "Routing",
+                    # "Badge ID": "0022"}], ignore_index = True)
 # print(djson)
 
 # djson["Badge ID"] = djson["FirstName"] + "2019"
@@ -128,11 +128,27 @@ djson = pandas.read_json("./sample_data/Employees.json")
 
 #Deleting Rows and Columns
 
+djson["Badge ID"] = ["0010","0011","0012","0013","0014","0015","0016","0017","0018","0019" ]
 djson.set_index("Badge ID", inplace = True)
+# print(djson)
 
-#Deleting a row by its name; by default, this command removes a row, if it is found
-djson.drop("label")
+# #Deleting a row by its name; by default, this command removes a row, if it is found
+# #Deleting a row explicitly, by passing 0 or 'index' as an argument; drop labels from the index (0 or 'index')
+# djson.drop("0010", inplace= True)
+# print(djson)
 
-#Deleting a row explicitly, by passing 0 or 'index' as an argument; drop labels from the index (0 or 'index')
-djson.drop("label", 0)
-djson.drop("label", "index")
+
+# djson.drop("Phone", "columns", inplace= True)
+# print(djson)
+
+# djson.drop(djson.index[4], inplace= True)
+# print(djson)
+
+# djson.drop(djson.index[0: 4], inplace= True)
+# print(djson)
+
+# djson.drop(djson.columns[1], 1, inplace= True)
+# print(djson)
+
+# djson.drop(djson.columns[5:], 1, inplace= True)
+# print(djson)
