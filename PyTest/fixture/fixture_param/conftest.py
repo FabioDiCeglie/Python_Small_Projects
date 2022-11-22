@@ -6,8 +6,8 @@ from unittest import mock
 #Defining the function with 3 parameters
 @pytest.fixture(scope = "module", params = [0, 1, 2, 3, 4])
 def xyfunc(request):
-    #Loading the Excel (D:\\testing\\values.xlsx) values into a Pandas DataFrame
-    df = pandas.read_excel("D:\\testing\\values.xlsx")
+
+    df = pandas.read_excel("../../../testing_calculator/values.xlsx")
 
     #The value of x
     x = float(df["Price"][request.param])
