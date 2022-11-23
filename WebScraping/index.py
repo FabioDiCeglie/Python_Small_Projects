@@ -11,3 +11,56 @@ content = webpage.content
 
 result = BeautifulSoup(content, "html.parser")
 # print(result)
+
+h = result.head
+
+
+h2 = result.h2
+# print(h2)
+
+title = result.title
+
+header = result.header
+# title.name = "mytitle"
+# print(title)
+
+# print(h.prettify())
+# print(result.header['role'])
+
+# result.header['role'] = "something"
+# print(result.header['role'])
+
+#or, using the get() method:
+# >>> header.get('role')
+# 'banner'
+# # >>> header.get('class')
+# ['navbar', 'navbar-fixed-top', 'navbar-static']
+
+
+#Adding a new tag attribute
+# >>> header['new'] = "python"
+# >>> header.attrs
+# {'role': 'something', 'class': ['navbar', 'navbar-fixed-top', 'navbar-static'], 'new': 'python'}
+
+#Removing a tag attribute
+# >>> del header['new']
+# >>> header.attrs
+# {'role': 'something', 'class': ['navbar', 'navbar-fixed-top', 'navbar-static']}
+
+#Extracting the string from a tag
+# >>> h2 = result.h2
+# >>> h2
+# <h2>Top items being scraped right now</h2>
+# >>> h2.string
+# 'Top items being scraped right now'
+# >>> type(h2.string)
+# <class 'bs4.element.NavigableString'>
+#this is called a NavigableString
+#https://www.crummy.com/software/BeautifulSoup/bs4/doc/#navigablestring
+
+#Zooming in to a certain area of the HTML tree
+#Using a tag name as an attribute will give you only the first tag by that name
+#More info: https://www.crummy.com/software/BeautifulSoup/bs4/doc/#navigating-the-tree
+# result.header.div
+# result.header.div.div.a
+# result.header.div.div.a.button
