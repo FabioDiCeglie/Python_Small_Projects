@@ -49,3 +49,18 @@ data = list(zip(names, links, prices))
 
 #Creating the Pandas dataframe
 d = pandas.DataFrame(data, columns = ['Name', 'Link', 'Price'])
+
+#Writing the dataframe to a new Excel file
+try:
+    d.to_csv("./Products.csv")
+
+except:
+    print("\nSomething went wrong! Please check your code.")
+
+else:
+    print("\nWeb data successfully written to Excel.")
+
+finally:
+    print("\nQuitting the program. Bye!")
+
+# End of program
