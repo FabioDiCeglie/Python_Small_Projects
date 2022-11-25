@@ -22,3 +22,14 @@ class Cat(Animal):
     def meow(self):
         print("I am meowing")
 
+class PoliceDog(Dog):
+    def __init__(self, breed, color, weight, hours_on_mission):
+        super().__init__(breed, color, weight) #it call the superclass Dog
+        self.hours_on_mission = hours_on_mission
+
+    def detect_drugs(self):
+        print("Sniff .. sniff .. I smell some weed here!")
+
+airport_dog = PoliceDog("german", "golden", 5000, 100)
+
+# print(airport_dog.eat())
