@@ -1,6 +1,6 @@
 class Animal:
-    def __init__(self,bread,color,weight):
-        self.bread = bread
+    def __init__(self,breed,color,weight):
+        self.breed = breed
         self.color = color
         self.weight = weight
 
@@ -19,6 +19,15 @@ class Dog(Animal):
 
     def eat(self):
         print("I am eating like a dog, messy!")
+
+    def __eq__(self, other):
+        return type(self) == type(other) and self.weight == other.weight
+
+    def __ne__(self, other):
+        return type(self) == type(other) and self.weight != other.weight
+
+    def __str__(self):
+        return f"I am a dog of {self.breed} breed, my fur color is {self.color} and I weigh {self.weight}!"
 
 
 class Cat(Animal):
@@ -56,16 +65,29 @@ class Derived(Base1, Base2):
 # airport_dog = PoliceDog("german", "golden", 5000, 100)
 # print(airport_dog.detect_drugs())
 
-print(Derived.mro())
+# print(Derived.mro())
 # [<class '__main__.Derived'>, <class '__main__.Base1'>, <class '__main__.Base2'>, <class 'object'>]
 
 
 # POLYMORPHISM = take multiple forms
-def make_animal_eat(animal):
-    animal.eat()
 
+# def make_animal_eat(animal):
+#     animal.eat()
+
+# blue_cat = Cat("british shorthair", "blue", 7000)
+# golden_dog = Dog("golden retriever", "golden", 5000)
+
+# make_animal_eat(blue_cat)
+# make_animal_eat(golden_dog)
+
+# MAGIC METHODS
 blue_cat = Cat("british shorthair", "blue", 7000)
 golden_dog = Dog("golden retriever", "golden", 5000)
+french = Dog("french bulldog", "brown", 2000)
+golden_dog2 = Dog("golden retriever", "golden", 2000)
 
-make_animal_eat(blue_cat)
-make_animal_eat(golden_dog)
+# print(golden_dog == french) # for comparing we need the magic methods
+print(french == golden_dog2)
+print(french != golden_dog2)
+print(golden_dog2 == blue_cat)
+print(golden_dog2)
