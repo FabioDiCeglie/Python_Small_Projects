@@ -68,7 +68,7 @@ result = BeautifulSoup(content, "html.parser")
 
 # find and find_all()
 
-#The find_all() method - finds the all occurrences of a certain tag (and other features, e.g. class name)
+# The find_all() method - finds the all occurrences of a certain tag (and other features, e.g. class name)
 
 # result.find("div").prettify()
 
