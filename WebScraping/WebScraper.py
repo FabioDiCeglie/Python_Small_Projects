@@ -39,6 +39,12 @@ for item in products:
 # print(links, len(links))
 #print(prices, len(prices))
 
+#Example zip
+# list1 = [1,2,3]
+# list2 = [10,20,30]
+# list3 = [100,200,300]
+# print(list(zip(list1,list2,list3))) #[(1, 10, 100), (2, 20, 200), (3, 30, 300)]
+
 data = list(zip(names, links, prices))
 
 #Creating the Pandas dataframe
