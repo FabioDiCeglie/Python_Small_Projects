@@ -12,15 +12,15 @@ content = webpage.content
 result = BeautifulSoup(content, "html.parser")
 # print(result)
 
-h = result.head
+# h = result.head
 
 
-h2 = result.h2
-# print(h2)
+# h2 = result.h2
+# # print(h2)
 
-title = result.title
+# title = result.title
 
-header = result.header
+# header = result.header
 # title.name = "mytitle"
 # print(title)
 
@@ -64,3 +64,17 @@ header = result.header
 # result.header.div
 # result.header.div.div.a
 # result.header.div.div.a.button
+
+
+# find and find_all()
+
+#The find_all() method - finds the all occurrences of a certain tag (and other features, e.g. class name)
+
+# result.find("div").prettify()
+
+# print(len(result.find_all("h1")))
+
+products = result.find_all("div", {"class": "col-sm-4 col-lg-4 col-md-4"})
+
+# print(type(products))
+print(len(products))
