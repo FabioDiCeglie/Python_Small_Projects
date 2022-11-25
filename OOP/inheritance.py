@@ -17,10 +17,17 @@ class Dog(Animal):
     def bark(self):
         print("I am barking")
 
+    def eat(self):
+        print("I am eating like a dog, messy!")
+
 
 class Cat(Animal):
     def meow(self):
         print("I am meowing")
+
+    def eat(self):
+        print("I am eating like a cat")
+
 
 class DetectDrugsMixin:
     def detect_drugs(self):
@@ -51,3 +58,14 @@ class Derived(Base1, Base2):
 
 print(Derived.mro())
 # [<class '__main__.Derived'>, <class '__main__.Base1'>, <class '__main__.Base2'>, <class 'object'>]
+
+
+# POLYMORPHISM = take multiple forms
+def make_animal_eat(animal):
+    animal.eat()
+
+blue_cat = Cat("british shorthair", "blue", 7000)
+golden_dog = Dog("golden retriever", "golden", 5000)
+
+make_animal_eat(blue_cat)
+make_animal_eat(golden_dog)
