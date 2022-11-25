@@ -1,4 +1,8 @@
-class Animal:
+from abc import ABC, abstractmethod
+
+
+
+class Animal(ABC):
     def __init__(self,breed,color,weight):
         self.breed = breed
         self.color = color
@@ -7,6 +11,7 @@ class Animal:
     def walk(self):
         print("I am walking")
 
+    @abstractmethod
     def eat(self):
         print("I am eating")
 
@@ -87,7 +92,50 @@ french = Dog("french bulldog", "brown", 2000)
 golden_dog2 = Dog("golden retriever", "golden", 2000)
 
 # print(golden_dog == french) # for comparing we need the magic methods
-print(french == golden_dog2)
-print(french != golden_dog2)
-print(golden_dog2 == blue_cat)
-print(golden_dog2)
+# print(french == golden_dog2)
+# print(french != golden_dog2)
+# print(golden_dog2 == blue_cat)
+# print(golden_dog2)
+
+
+# Most frequently used magic methods:
+# Addition (+): __add__(self, other)
+# Subtraction (-): __sub__(self, other)
+# Multiplication (*): __mul__(self, other)
+# Floor division (//): __floordiv__(self, other)
+# True division (/): __truediv__(self, other)
+# Modulo (%): __mod__(self, other)
+# Power (**): __pow__(self, other)
+# Less than (<): __lt__(self, other)
+# Greater than (>): __gt__(self, other)
+# Less than or equal (<=): __le__(self, other)
+# Greater than or equal(>=): __ge__(self, other)
+# Equals (==): __eq__(self, other)
+# Not equals (!=): __ne__(self, other)
+
+# ABSTRACTION
+
+french.eat()
+blue_cat.eat()
+
+
+class IEmail(ABC):
+    @abstractmethod
+    def send(self):
+        pass
+
+    @property
+    @abstractmethod
+    def valid_domain(self):
+        pass
+
+
+class Email(IEmail):
+    valid_domain = "epicpython.io"
+
+    def send(self):
+        print(f"Sending and email from the email class with the valid domain {self.valid_domain}")
+
+
+email = Email()
+email.send()
