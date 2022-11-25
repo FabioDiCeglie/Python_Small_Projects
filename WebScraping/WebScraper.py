@@ -52,7 +52,7 @@ d = pandas.DataFrame(data, columns = ['Name', 'Link', 'Price'])
 
 #Writing the dataframe to a new Excel file
 try:
-    d.to_csv("./Products.csv")
+    d.to_csv("./WebScraping/Products.csv")
 
 except:
     print("\nSomething went wrong! Please check your code.")
