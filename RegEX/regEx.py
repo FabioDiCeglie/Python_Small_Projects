@@ -22,3 +22,20 @@ result.group(3)
 #   File "<pyshell#92>", line 1, in <module>
 #     result.group(3)
 # IndexError: no such group
+result = re.search(r".+(?P<wordex>\b.+ex\b).+(?P<uppercase>\b[A-Z]{4}\b).+(?P<date>\d\d\s.+)\.", string)
+result.groups()
+('index', 'FTSE', '19 February')
+result.group("wordex")
+'index'
+result.group("uppercase")
+'FTSE'
+result.group("date")
+'19 February'
+result.group(1)
+'index'
+result.group(2)
+'FTSE'
+result.group(3)
+'19 February'
+result.groupdict()
+{'wordex': 'index', 'uppercase': 'FTSE', 'date': '19 February'}
