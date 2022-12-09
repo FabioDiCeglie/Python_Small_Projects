@@ -53,4 +53,12 @@ result
 result = re.findall(r"\b\w+\b(?!\s)", string)
 result
 ['index', 'FTSE', '11', '48', '1998', '2', 'all', 'February']
-# positive lookbehind assertions
+# positive lookbehind assertions (?<=...)
+# number that are not precide by a space
+result = re.findall(r"(?<=\s)\d{1,}", string)
+result
+['600', '11', '1998', '600', '19']
+# precidet by comma and space
+result = re.findall(r"(?<=,\s)\b\w+\b", string)
+result
+['which', 'fell']
