@@ -35,6 +35,7 @@ result.group(3)
 '19 February'
 result.groupdict()
 {'wordex': 'index', 'uppercase': 'FTSE', 'date': '19 February'}
+# positive lookahead assertions
 result = re.findall(r"[A-Z]{5}\s(?=[0-9]{3})", string)
 result
 ['STOXX ', 'STOXX ']
@@ -44,3 +45,12 @@ result
 result = re.findall(r"Euro(?=[a-z]+)", string)
 result
 ['Euro']
+# negative lookahead assertions
+result = re.findall(r"\d(?![5-9]|\D)", string)
+result
+['6', '0', '1', '6', '0']
+# not followed by a space
+result = re.findall(r"\b\w+\b(?!\s)", string)
+result
+['index', 'FTSE', '11', '48', '1998', '2', 'all', 'February']
+# positive lookbehind assertions
