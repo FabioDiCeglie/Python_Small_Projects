@@ -17,11 +17,7 @@ result.group(1)
 'FTSE'
 result.group(2)
 '19 February'
-result.group(3)
-# Traceback (most recent call last):
-#   File "<pyshell#92>", line 1, in <module>
-#     result.group(3)
-# IndexError: no such group
+
 result = re.search(r".+(?P<wordex>\b.+ex\b).+(?P<uppercase>\b[A-Z]{4}\b).+(?P<date>\d\d\s.+)\.", string)
 result.groups()
 ('index', 'FTSE', '19 February')
@@ -39,3 +35,12 @@ result.group(3)
 '19 February'
 result.groupdict()
 {'wordex': 'index', 'uppercase': 'FTSE', 'date': '19 February'}
+result = re.findall(r"[A-Z]{5}\s(?=[0-9]{3})", string)
+result
+['STOXX ', 'STOXX ']
+result = re.findall(r"([A-Z]{5})\s(?=[0-9]{3})", string)
+result
+['STOXX', 'STOXX']
+result = re.findall(r"Euro(?=[a-z]+)", string)
+result
+['Euro']
